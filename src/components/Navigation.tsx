@@ -32,7 +32,8 @@ function Navigation({
 }: NavigationProps) {
   const containerClasses = `govuk-service-navigation${classes ? ` ${classes}` : ""}`
   const navClasses = `govuk-service-navigation__wrapper${navigationClasses ? ` ${navigationClasses}` : ""}`
-
+  const navLabel = navigationLabel || ariaLabel || "Menu"
+  
   return (
     <div
       className={containerClasses}
@@ -41,7 +42,7 @@ function Navigation({
     >
       <div className="govuk-width-container">
         <div className="govuk-service-navigation__container">
-          <nav aria-label={ariaLabel} className={navClasses}>
+          <nav aria-label={navLabel} className={navClasses}>
             <button
               type="button"
               className="govuk-service-navigation__toggle govuk-js-service-navigation-toggle"
