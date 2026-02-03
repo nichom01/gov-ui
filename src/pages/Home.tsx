@@ -12,9 +12,9 @@ function Home() {
   ]
 
   return (
-    <>
+    <div style={{ flex: '1' }}>
       <Navigation navigation={navigationItems} />
-      <div className="govuk-width-container" style={{ flex: '1' }}>
+      <div className="govuk-width-container">
         <Breadcrumb items={breadcrumbItems} />
         <main className="govuk-main-wrapper" id="main-content">
           <h1 className="govuk-heading-xl">Welcome to GOV.UK</h1>
@@ -26,7 +26,7 @@ function Home() {
           </p>
         </main>
       </div>
-    </>
+    </div>
   )
 }
 
