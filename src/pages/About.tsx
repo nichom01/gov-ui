@@ -1,4 +1,5 @@
 import Navigation from '../components/Navigation'
+import Breadcrumb from '../components/Breadcrumb'
 
 function About() {
   const navigationItems = [
@@ -6,10 +7,16 @@ function About() {
     { href: '/about', text: 'About', current: true },
   ]
 
+  const breadcrumbItems = [
+    { href: '/', text: 'Home' },
+    { text: 'About' },
+  ]
+
   return (
     <>
       <Navigation navigation={navigationItems} />
       <div className="govuk-width-container" style={{ flex: '1' }}>
+        <Breadcrumb items={breadcrumbItems} />
         <main className="govuk-main-wrapper" id="main-content">
           <h1 className="govuk-heading-xl">About</h1>
           <p className="govuk-body-l">
