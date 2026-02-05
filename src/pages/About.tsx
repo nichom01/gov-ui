@@ -4,7 +4,11 @@ import Breadcrumb from '../components/Breadcrumb'
 function About() {
   const navigationItems = [
     { href: '/', text: 'Home' },
-    { href: '/about', text: 'About', current: true },
+    { href: '/about', text: 'Test Data Generation', current: true },
+    { href: '/about', text: 'Trade Test'},
+    { href: '/about', text: 'Bulk Data Generation' },
+    { href: '/about', text: 'Historical Data Sets' },
+    { href: '/about', text: 'Uploads' },
   ]
 
   const breadcrumbItems = [
